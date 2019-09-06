@@ -1,0 +1,82 @@
+.card{
+    width:100%;
+    align-content: center;
+}
+.card div{
+    margin: .5em auto;
+}
+.blue{
+    background-color: rgb(86, 86, 192);
+    height: 60px;
+}
+.yellow{
+    background-color: rgb(226, 228, 89);
+    height: 60px;
+}
+.green{
+    background-color: greenyellow;
+    height: 60px;
+    margin: .5em auto;
+}
+.pink{
+    background-color: palevioletred;
+    height: 60px;
+}
+.purple{
+    background-color: purple;
+    height: 60px;
+}
+.orange{
+    background-color: rgb(226, 179, 49);
+    height: 60px;
+}
+@media screen and (min-width: 600px){
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card div{
+        height: 80px;
+        padding: auto 1em;
+    }
+    .blue{
+        width:80%;
+    }
+    .yellow{
+        width:20%;
+    }
+    .green{
+        width:33.333333%;
+    }
+    .pink{
+        width:33.333333%;
+    }
+    .purple{
+        width:33.333333%;
+    }
+    .orange{
+      width: 100%;
+      order: -1;
+    }
+}
+@media screen and (min-width: 800px){
+    .purple{
+        order: -2;
+        width: 49%;
+    }
+    .orange{
+        width: 49%;
+    }
+    .green{
+        width:59%;
+    }
+    .pink{
+        width:39%;
+    }
+    .blue{
+        width:79%;
+    }
+    .yellow{
+        width:19%;
+    }
+}

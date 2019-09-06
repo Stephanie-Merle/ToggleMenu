@@ -1,0 +1,44 @@
+table {
+    border: 1px solid rgb(115, 117, 117);
+    text-align: center;
+    width:100%;
+  }
+  table.hidden{
+    visibility: hidden;
+  }
+  thead th{
+    background-color: rgb(35, 50, 56);
+    color: rgb(223, 217, 217);
+    padding: .2em;
+  }
+  tr:nth-child(odd) {
+    background-color: #a2c8da;
+  }
+  @media screen and (min-width: 600px){
+    table.hidden{
+      visibility: visible;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    td { 
+      position: relative;
+      padding-left: 50%; 
+    }
+    td:before { 
+      position: absolute;
+      left: 6px;
+      content: attr(data-th);
+      font-weight: bold;
+    }
+    td:first-of-type {
+      font-weight: bold;
+    }
+  }
