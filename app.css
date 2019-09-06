@@ -6,6 +6,7 @@ html, body{
     max-width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .table{
     margin: 1em;
@@ -14,20 +15,26 @@ html, body{
 .more{
     display: flex;
     justify-content: center;
+    margin: 1em;
 }
 nav p{
     color:rgb(33, 33, 34);
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 70%;
-    padding: .7em;
+    padding: 1em;
     text-align: center;
     border-radius: 1em;
-    background-color: rgba(203, 203, 207, 0.287);
+    background-color: white;
+    border: 1px solid rgb(177, 175, 175);
     margin: 1em auto;
     order:1;
     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
     box-shadow: rgb(180, 178, 178) 0 1px 0;
+}
+nav p:hover{
+    background-color: #444545;
+    color: rgb(224, 220, 220);
 }
 main{
     height:auto;
