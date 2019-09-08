@@ -7,6 +7,7 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(63, 60, 65);
 }
 .table{
     margin: 1em;
@@ -18,14 +19,14 @@ html, body{
     margin: 1em;
 }
 nav p{
-    color:rgb(33, 33, 34);
+    color:rgb(183, 183, 185);
     font-size: 1rem;
     width: 70%;
     padding: 1em;
     text-align: center;
-    border-radius: 1em;
-    background-color: white;
-    border: 1px solid rgb(177, 175, 175);
+    border-radius: .7em;
+    border-top: 1px solid rgb(177, 175, 175);
+    border-bottom: 1px solid rgb(177, 175, 175);
     margin: 1em auto;
     order:1;
     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
@@ -33,17 +34,22 @@ nav p{
     box-shadow: rgb(180, 178, 178) 0 1px 0;
 }
 nav p:hover{
-    background-color: #444545;
+    background-color: rgb(110, 97, 110);
     color: rgb(224, 220, 220);
+    color: rgb(173, 139, 165);
 }
 main{
     height:auto;
     width: 100%;
+    color: rgb(219, 215, 215);
 }
 nav, main{
     min-height: 100%;
     padding: 1.5em;
     box-sizing: border-box;
+}
+.board{
+    color: gray;
 }
 nav{
     width: 300px;
@@ -53,10 +59,16 @@ nav{
     transform: translate(-300px, 0);
     -webkit-transform: translate(-300px, 0);
     transition: transform 0.3s ease;
-    background-color: rgb(243, 245, 246);
+    background-color: rgb(63, 60, 65);
 }
 nav.open{
     transform: translate(0, 0);
+    background-color: rgb(105, 83, 98);
+    border-right: 2px solid rgb(177, 175, 175);
+}
+nav.open p:hover{
+    background-color: rgb(173, 139, 165);
+    color:rgb(47, 29, 44);
 }
 svg{
     width: 30px;
@@ -104,7 +116,6 @@ svg{
         position: relative;
         transform: translate(0, 0);
         -webkit-transform: translate(0, 0);
-        background-color: white;
     }
     body{
         display:flex;
